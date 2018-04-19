@@ -1,0 +1,17 @@
+.bg-image {
+    min-height: 60rem;
+    padding-bottom: 20rem;
+    padding-top: 20rem;
+    background: url("../img/bg-image.jfif");
+    /*Add linear-gradient and transparent black/gray color to make the text more visible.*/
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.white {
+    color: #fff;
+}
