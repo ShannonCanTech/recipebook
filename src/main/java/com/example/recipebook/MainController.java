@@ -11,4 +11,18 @@ public class MainController {
     {
         return "index";
     }
+
+    @RequestMapping("/recipes")
+    public String showRecipes()
+    {
+        return "recipelist";
+    }
+
+    @RequestMapping("/wings")
+    public String wingsRecipe()
+    {
+        return "wings";
+    }
+
+
 }

@@ -1,44 +1,77 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8"/>
+
+  <head th:fragment="head">
+
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Recipe Book</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Recipe Book Web App</title>
 
-    <!--Custom CSS-->
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
+      <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<!--    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Recipe list</a></li>
-            <li></li>
-        </ul>
-    </nav>-->
+    <!-- Default Template CSS -->
+      <link href="/css/blog-post.css" rel="stylesheet">
+      <link href="/css/2-col-portfolio.css" rel="stylesheet">
+      <link href="/css/full.css" rel="stylesheet">
 
-    <header class="bg-image d-flex">
+      <!--Google Fonts-->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather|Poiret+One|Shrikhand" rel="stylesheet">
+
+      <!--My CSS-->
+      <link rel="stylesheet" href="/css/style.css">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" th:fragment="navigation">
+      <div class="container">
+        <a class="navbar-brand" href="#">My Recipe Book</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recipe List</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Recipes</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/wings">Wings</a>
+                    <a class="dropdown-item" href="/injera">Injera</a>
+                    <a class="dropdown-item" href="/pumpkin-rice-noodles">Pumpkin Rice Noodles</a>
+                    <a class="dropdown-item" href="/egg-sauce">Egg Sauce</a>
+                    <a class="dropdown-item" href="/makroudhs">Makroudhs</a>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <header class="d-flex align-header">
         <div class="container white">
-            <h1 class="display-1">Recipe Book</h1>
-            <h3 class="lead">This is a recipe book web page.</h3>
-                <button type="submit" class="btn btn-primary yellow">Get Started</button>
+            <h1 class="display-1 hd-text">My Recipe Book</h1>
+            <h3 class="lead tx-text">This is a recipe book web page.</h3>
+            <button type="submit" class="btn btn-primary yellow">Get Started</button>
         </div>
     </header>
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <article>
-        <div class="section">
+  </body>
 
-
-        </div>
-    </article>
-
-    <!--Bootstrap Default JS-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
 </html>

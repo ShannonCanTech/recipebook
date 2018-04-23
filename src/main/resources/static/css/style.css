@@ -1,15 +1,22 @@
+@import "static/vendor/flag-icon-css-master/css/flag-icon.min.css";
+
 .bg-image {
     min-height: 60rem;
     padding-bottom: 20rem;
     padding-top: 20rem;
     background: url("../img/bg-image.jfif");
     /*Add linear-gradient and transparent black/gray color to make the text more visible.*/
-    position: fixed;
+    position: relative;
     width: 100%;
     height: auto;
     background-position: center center;
     background-size: cover;
-    overflow: hidden;
+    /*overflow: hidden;*/
+}
+
+.align-header {
+    text-align: center;
+    padding-top: 20rem;
 }
 
 .white {
@@ -19,4 +26,37 @@
 .yellow{
     background-color: #ffff00;
     border-color: #ffff00;
+    font-weight: bold;
+    color: #00cc00;
+}
+
+.navbar-brand{
+    font-family: 'Shrikhand', cursive;
+    font-weight: bold;
+}
+
+.hd-text {
+    font-family: 'Merriweather', serif;
+    position: relative;
+}
+
+.tx-text {
+    font-family: 'Poiret One', cursive;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+
+.card-img-top {
+    height: auto;
+    max-height: 20rem;
+    min-height: 20rem;
+}
+
+/*.flag-wrapper.flag{
+    max-width: 3rem;
+}*/
+
+body.remove-bg-img {
+    background: none;
 }
