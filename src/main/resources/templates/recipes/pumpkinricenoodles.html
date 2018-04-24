@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="www.thymeleaf.org">
 
-<head th:insert="index.html :: head">
+<head th:insert="/fragments/navbar::head">
 
     <link rel="stylesheet" href="/css/addstyles.css">
 
@@ -10,7 +10,7 @@
 <body class="remove-bg-img">
 
 <!-- Navigation -->
-<nav th:insert="index.html :: navigation">
+<nav th:replace="/fragments/navbar::navigation(${menu})">
 </nav>
 
 <!-- Page Content -->
@@ -22,11 +22,13 @@
         <div class="col-lg-8">
 
             <!-- Title -->
-            <h1 class="mt-4">Wings</h1>
+            <h1 class="mt-4" th:text="${menu}"></h1>
 
             <!-- Author -->
             <p class="lead">
                 by
+                <!--Create an Add User program to incorporate-->
+                <!--<a href="#" th:text="${userId}"></a>-->
                 <a href="#">Shannon Foster</a>
             </p>
 
@@ -207,8 +209,8 @@
 </footer>
 
 <!-- Bootstrap core JavaScript -->
-<script src="../../../../../../Documents/RecipeTemplate/vendor/jquery/jquery.min.js"></script>
-<script src="../../../../../../Documents/RecipeTemplate/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
